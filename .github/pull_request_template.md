@@ -6,5 +6,5 @@ Closes #
 
 ## Checklist
 
-- [ ] Testes atualizados quando necessário
-- [ ] CI passando
+- [ ] Testes atualizados quando necessário.
+- [ ] CI passando.
