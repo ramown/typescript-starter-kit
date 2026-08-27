@@ -1,0 +1,52 @@
+name: Bug
+description: Reportar um problema
+title: '[BUG] '
+labels:
+  - bug
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: Descreva o problema encontrado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Como reproduzir
+      description: Descreva os passos necessários para reproduzir o problema.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      description: Descreva o que deveria acontecer.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências
+      description: Adicione logs, mensagens de erro ou screenshots, se necessário.
+
+  - type: input
+    id: node
+    attributes:
+      label: Versão do Node.js
+      placeholder: '24.x'
+
+  - type: input
+    id: os
+    attributes:
+      label: Sistema operacional
+      placeholder: 'Ubuntu 24.04'

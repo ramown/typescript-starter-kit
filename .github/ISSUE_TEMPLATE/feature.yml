@@ -1,0 +1,40 @@
+name: Feature
+description: Propor uma nova funcionalidade ou melhoria
+title: '[FEATURE] '
+labels:
+  - enhancement
+
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo
+      description: Qual problema ou necessidade queremos resolver?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: Descreva brevemente a solução.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: O que precisa ser atendido para considerarmos esta issue concluída?
+      placeholder: |
+        - [ ] Critério 1
+        - [ ] Critério 2
+        - [ ] Critério 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Observações
+      description: Informações adicionais, referências ou decisões relevantes.
