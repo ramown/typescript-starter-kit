@@ -1,0 +1,25 @@
+{
+  "name": "typescript-starter-kit",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramown/typescript-starter-kit.git"
+  },
+  "keywords": [],
+  "author": "Emmanuel Ramon",
+  "license": "",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ramown/typescript-starter-kit/issues"
+  },
+  "homepage": "https://github.com/ramown/typescript-starter-kit#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
