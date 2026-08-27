@@ -3,9 +3,7 @@
     "target": "ES2024",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "paths": {
-      "#src/*": ["./src/*"]
-    },
+    "customConditions": ["development"],
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,

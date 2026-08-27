@@ -1,3 +1,3 @@
-const message: string = 'TypeScript Starter Kit';
+import { sum } from '#/sum';
 
-console.log(message);
+console.log(sum(2, 3));
