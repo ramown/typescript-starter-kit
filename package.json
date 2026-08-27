@@ -36,5 +36,11 @@
     "typescript": "npm:@typescript/typescript6@^6.0.2",
     "typescript-eslint": "^8.68.0",
     "vitest": "^4.1.11"
+  },
+  "imports": {
+    "#/*": {
+      "development": "./src/*.ts",
+      "default": "./dist/*.js"
+    }
   }
 }
