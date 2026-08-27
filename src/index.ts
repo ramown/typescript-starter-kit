@@ -1,7 +1,7 @@
 import { sum } from '#/sum';
 
-console.log(sum(2, 3));
+import { env } from '#/config/env';
 
-const message: string = 'hello';
+console.log(sum(env.port, 3));
 
-console.log(message);
+console.log(env);
