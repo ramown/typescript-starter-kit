@@ -1,3 +1,3 @@
-const message: string = "TypeScript Starter Kit";
+const message: string = 'TypeScript Starter Kit';
 
 console.log(message);
