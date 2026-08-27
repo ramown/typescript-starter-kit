@@ -1,40 +1,34 @@
-name: Feature
-description: Propor uma nova funcionalidade ou melhoria
-title: '[FEATURE] '
-labels:
-  - enhancement
+- type: textarea
+  id: objective
+  attributes:
+    label: Objetivo
+    description: Qual problema ou necessidade queremos resolver?
+    placeholder: |
+      Exemplo: Padronizar a validação do código antes de cada commit.
+  validations:
+    required: true
 
-body:
-  - type: textarea
-    id: objective
-    attributes:
-      label: Objetivo
-      description: Qual problema ou necessidade queremos resolver?
-    validations:
-      required: true
+- type: textarea
+  id: proposal
+  attributes:
+    label: Proposta
+    description: Descreva brevemente a solução.
+    placeholder: |
+      Exemplo: Adicionar Husky e lint-staged para executar ESLint
+      e Prettier nos arquivos modificados.
+  validations:
+    required: true
 
-  - type: textarea
-    id: proposal
-    attributes:
-      label: Proposta
-      description: Descreva brevemente a solução.
-    validations:
-      required: true
-
-  - type: textarea
-    id: acceptance
-    attributes:
-      label: Critérios de aceite
-      description: O que precisa ser atendido para considerarmos esta issue concluída?
-      placeholder: |
-        - [ ] Critério 1
-        - [ ] Critério 2
-        - [ ] Critério 3
-    validations:
-      required: true
-
-  - type: textarea
-    id: additional
-    attributes:
-      label: Observações
-      description: Informações adicionais, referências ou decisões relevantes.
+- type: textarea
+  id: acceptance
+  attributes:
+    label: Critérios de aceite
+    description: O que precisa ser atendido para considerarmos esta issue concluída?
+    placeholder: |
+      Exemplo:
+      - [ ] Husky configurado
+      - [ ] lint-staged executado no pre-commit
+      - [ ] ESLint validando arquivos TypeScript
+      - [ ] Prettier formatando arquivos modificados
+  validations:
+    required: true
