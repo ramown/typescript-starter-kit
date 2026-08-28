@@ -1,34 +1,40 @@
-- type: textarea
-  id: description
-  attributes:
-    label: Descrição
-    description: Descreva o problema encontrado.
-    placeholder: |
-      Exemplo: Ao executar `npm run build`, a compilação falha quando
-      uma variável de ambiente não está definida.
-  validations:
-    required: true
+name: Relato de bug
+description: Informe um problema reproduzível encontrado no projeto.
+title: '[Bug]: '
+labels:
+  - bug
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: Descreva o problema encontrado.
+      placeholder: |
+        Exemplo: Ao executar `npm run build`, a compilação falha quando
+        uma variável de ambiente não está definida.
+    validations:
+      required: true
 
-- type: textarea
-  id: reproduction
-  attributes:
-    label: Como reproduzir
-    description: Descreva os passos necessários para reproduzir o problema.
-    placeholder: |
-      Exemplo:
-      1. Clone o repositório
-      2. Execute `npm ci`
-      3. Execute `npm run build`
-      4. Observe o erro apresentado
-  validations:
-    required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Como reproduzir
+      description: Descreva os passos necessários para reproduzir o problema.
+      placeholder: |
+        Exemplo:
+        1. Clone o repositório
+        2. Execute `npm ci`
+        3. Execute `npm run build`
+        4. Observe o erro apresentado
+    validations:
+      required: true
 
-- type: textarea
-  id: expected
-  attributes:
-    label: Comportamento esperado
-    placeholder: |
-      Exemplo: O projeto deve compilar mesmo quando o arquivo `.env`
-      não estiver presente.
-  validations:
-    required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      placeholder: |
+        Exemplo: O projeto deve compilar mesmo quando o arquivo `.env`
+        não estiver presente.
+    validations:
+      required: true

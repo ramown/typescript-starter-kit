@@ -1,34 +1,40 @@
-- type: textarea
-  id: objective
-  attributes:
-    label: Objetivo
-    description: Qual problema ou necessidade queremos resolver?
-    placeholder: |
-      Exemplo: Padronizar a validação do código antes de cada commit.
-  validations:
-    required: true
+name: Solicitação de melhoria
+description: Proponha uma nova funcionalidade ou melhoria para o projeto.
+title: '[Melhoria]: '
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo
+      description: Qual problema ou necessidade queremos resolver?
+      placeholder: |
+        Exemplo: Padronizar a validação do código antes de cada commit.
+    validations:
+      required: true
 
-- type: textarea
-  id: proposal
-  attributes:
-    label: Proposta
-    description: Descreva brevemente a solução.
-    placeholder: |
-      Exemplo: Adicionar Husky e lint-staged para executar ESLint
-      e Prettier nos arquivos modificados.
-  validations:
-    required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: Descreva brevemente a solução.
+      placeholder: |
+        Exemplo: Adicionar Husky e lint-staged para executar ESLint
+        e Prettier nos arquivos modificados.
+    validations:
+      required: true
 
-- type: textarea
-  id: acceptance
-  attributes:
-    label: Critérios de aceite
-    description: O que precisa ser atendido para considerarmos esta issue concluída?
-    placeholder: |
-      Exemplo:
-      - [ ] Husky configurado
-      - [ ] lint-staged executado no pre-commit
-      - [ ] ESLint validando arquivos TypeScript
-      - [ ] Prettier formatando arquivos modificados
-  validations:
-    required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: O que precisa ser atendido para considerarmos esta issue concluída?
+      placeholder: |
+        Exemplo:
+        - [ ] Husky configurado
+        - [ ] lint-staged executado no pre-commit
+        - [ ] ESLint validando arquivos TypeScript
+        - [ ] Prettier formatando arquivos modificados
+    validations:
+      required: true
