@@ -13,7 +13,9 @@ export default defineConfig({
     environment: 'node',
     include: ['tests/**/*.test.ts'],
     coverage: {
+      provider: 'v8',
       reporter: ['text', 'html'],
+      reportsDirectory: './coverage',
     },
   },
 });
